@@ -1,1 +1,0 @@
-# gutabeshu.github.io
