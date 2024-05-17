@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guta Wakbulcho Abeshu, PhD - Computational Climate Scientist</title>
+    <title>Guta Wakbulcho Abeshu, PhD - Personal Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -13,75 +13,97 @@
             <h1>Guta Wakbulcho Abeshu, PhD</h1>
             <p>Postdoctoral Research Associate in Computational Climate Science</p>
             <p>Pacific Northwest National Laboratory, Richland, WA, USA</p>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +1 (509) 460-7517</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:guta.abeshu@pnnl.gov">guta.abeshu@pnnl.gov</a> / <a href="mailto:gutewaqi@gmail.com">gutewaqi@gmail.com</a></p>
+                <p>
+                    <a href="https://github.com/gutabeshu"><i class="fab fa-github"></i> Github</a> | 
+                    <a href="https://scholar.google.com/citations?user=oJwf_RwAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                </p>
+            </div>
         </div>
     </header>
 
     <nav>
         <div class="container">
-            <ul class="menu">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="tabs">
+                <li class="tab-link current" data-tab="tab-1">Home</li>
+                <li class="tab-link" data-tab="tab-2">About</li>
+                <li class="tab-link" data-tab="tab-3">Research</li>
+                <li class="tab-link" data-tab="tab-4">Publications</li>
+                <li class="tab-link" data-tab="tab-5">Contact</li>
             </ul>
         </div>
     </nav>
 
     <main>
-        <section id="home">
-            <div class="container">
-                <h2>Welcome</h2>
-                <p>I am a Postdoctoral Research Associate at the Pacific Northwest National Laboratory, specializing in computational climate science, hydrosystems, and ecohydrology. My research focuses on understanding the complex interactions between climate, water, and ecosystems across multiple spatiotemporal scales.</p>
+        <div class="container">
+            <div id="tab-1" class="tab-content current">
+                <section>
+                    <h2>Welcome</h2>
+                    <p>Hello! I am Guta Wakbulcho Abeshu, a Postdoctoral Research Associate at the Pacific Northwest National Laboratory. My research focuses on computational climate science, hydrosystems, and ecohydrology. Explore my website to learn more about my work, research interests, and publications.</p>
+                </section>
             </div>
-        </section>
 
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>I hold a Ph.D. in Civil Engineering (Hydrosystems) from the University of Houston. My dissertation explored catchment ecohydrological processes and their interactions across various scales. I also have a Master of Advanced Studies in Sustainable Water Resources from ETH Zurich and an M.Sc. in Water Resources Engineering and Management from Addis Ababa University.</p>
-                <p>My research interests encompass catchment ecohydrology, urban ecohydrology, medium to large scale hydrological/water resources modeling, water resource systems, hydrological extremes, dynamic risk management, and the resilience of water infrastructures.</p>
+            <div id="tab-2" class="tab-content">
+                <section>
+                    <h2>About Me</h2>
+                    <p>I hold a Ph.D. in Civil Engineering (Hydrosystems) from the University of Houston. My dissertation focused on understanding catchment ecohydrological processes and their interactions across multiple spatiotemporal scales. I also have a Master of Advanced Studies in Sustainable Water Resources from ETH Zurich and an M.Sc. in Water Resources Engineering and Management from Addis Ababa University.</p>
+                    <p>My research interests include catchment ecohydrology, urban ecohydrology, medium to large scale hydrological/water resources modeling, water resource systems, hydrological extremes, dynamic risk management, and the resilience of water infrastructures.</p>
+                </section>
             </div>
-        </section>
 
-        <section id="research">
-            <div class="container">
-                <h2>Research</h2>
-                <h3>Current Position</h3>
-                <p><strong>Postdoctoral Research Associate, Computational Climate Science</strong>, Pacific Northwest National Laboratory, Richland, WA, USA, 01/2023 - Present</p>
-                <h3>Past Research Experience</h3>
-                <ul>
-                    <li><strong>Postdoctoral Research Fellow</strong>, University of Houston, Houston, TX, USA, 07/2022 - 09/2023</li>
-                    <li><strong>Graduate Research Assistant</strong>, University of Houston, Houston, TX, USA, 08/2018 - 05/2022</li>
-                    <li><strong>Graduate Research Assistant</strong>, Montana State University, Bozeman, MT, USA, 01/2017 - 08/2018</li>
-                </ul>
+            <div id="tab-3" class="tab-content">
+                <section>
+                    <h2>Research</h2>
+                    <h3>Current Position</h3>
+                    <p><strong>Postdoctoral Research Associate, Computational Climate Science</strong>, Pacific Northwest National Laboratory, Richland, WA, USA, 01/2023 - Present</p>
+                    <h3>Past Research Experience</h3>
+                    <ul>
+                        <li><strong>Postdoctoral Research Fellow</strong>, University of Houston, Houston, TX, USA, 07/2022 - 09/2023
+                            <ul>
+                                <li>Developing a global lake modeling module for a global hydrologic model.</li>
+                                <li>Mentoring graduate students.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Graduate Research Assistant</strong>, University of Houston, Houston, TX, USA, 08/2018 - 05/2022
+                            <ul>
+                                <li>Theoretical analysis: Catchment Ecohydrology.</li>
+                                <li>Modeling and machine learning development for various projects, including Xanthos-W and MOSART-Sediment.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Graduate Research Assistant</strong>, Montana State University, Bozeman, MT, USA, 01/2017 - 08/2018
+                            <ul>
+                                <li>Theoretical analysis: Catchment Ecohydrology.</li>
+                                <li>Modeling for several projects, including Xanthos and MOSART.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
             </div>
-        </section>
 
-        <section id="publications">
-            <div class="container">
-                <h2>Publications</h2>
-                <p>My research contributions include peer-reviewed publications, conference presentations, and manuscripts in preparation. Some notable publications:</p>
-                <ul>
-                    <li>Abeshu, G. W., Li, H. Y., Zhu, Z., & Tan, Z. (2023). Assessing the impacts of climate change on global lake dynamics using a coupled lake-hydrology model. Journal of Hydrology, 615, 128759.</li>
-                    <li>Abeshu, G. W., Li, H. Y., Zhu, Z., & Tan, Z. (2022). A physically based lake module for global hydrological modeling. Water Resources Research, 58(4), e2021WR031788.</li>
-                    <li>Abeshu, G. W., Li, H. Y., Zhu, Z., Tan, Z., & Leung, L. R. (2021). Representing lakes in a global hydrologic model for simulating lake dynamics and interactions with watershed hydrology. Journal of Advances in Modeling Earth Systems, 13(10), e2021MS002583.</li>
-                </ul>
+            <div id="tab-4" class="tab-content">
+                <section>
+                    <h2>Publications</h2>
+                    <p>Refer to the attached <a href="publications.bib">publications list</a> for a comprehensive overview of my research contributions, including peer-reviewed publications, conference presentations, and manuscripts in preparation.</p>
+                </section>
             </div>
-        </section>
 
-        <section id="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <p>I welcome collaborations, questions, and discussions related to my research areas. Please feel free to reach out to me using the following contact information:</p>
-                <ul class="contact-info">
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:gutewaqi@gmail.com">gutewaqi@gmail.com</a></li>
-                    <li><i class="fas fa-phone"></i> +1 (509) 460-7517</li>
-                    <li><i class="fab fa-github"></i> <a href="https://github.com/gutabeshu">GitHub</a></li>
-                    <li><i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.com/citations?user=oJwf_RwAAAAJ&hl=en">Google Scholar</a></li>
-                </ul>
+            <div id="tab-5" class="tab-content">
+                <section>
+                    <h2>Contact Me</h2>
+                    <p>If you would like to get in touch, please feel free to contact me via email or connect with me on GitHub or Google Scholar.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (509) 460-7517</p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:guta.abeshu@pnnl.gov">guta.abeshu@pnnl.gov</a> / <a href="mailto:gutewaqi@gmail.com">gutewaqi@gmail.com</a></p>
+                        <p>
+                            <a href="https://github.com/gutabeshu"><i class="fab fa-github"></i> Github</a> | 
+                            <a href="https://scholar.google.com/citations?user=oJwf_RwAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                        </p>
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
