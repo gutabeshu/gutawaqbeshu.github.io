@@ -4,12 +4,19 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background: #f4f4f4;
 }
 
 header {
-    background: #f4f4f4;
-    padding: 1em 0;
+    background: #333;
+    color: #fff;
+    padding: 2em 0;
     text-align: center;
+}
+
+header .container {
+    max-width: 800px;
+    margin: auto;
 }
 
 header h1 {
@@ -21,7 +28,7 @@ header p {
 }
 
 header a {
-    color: #0066cc;
+    color: #1e90ff;
     text-decoration: none;
 }
 
@@ -30,8 +37,14 @@ header a:hover {
 }
 
 nav {
-    background: #333;
+    background: #1e90ff;
     color: #fff;
+    padding: 1em 0;
+}
+
+nav .container {
+    max-width: 800px;
+    margin: auto;
 }
 
 nav ul {
@@ -39,7 +52,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 nav ul li {
@@ -55,7 +68,15 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    background: #0066cc;
+    background: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2em;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .tabs {
@@ -69,58 +90,18 @@ nav ul li a.active {
 .tabs .tab-link {
     padding: 10px 20px;
     cursor: pointer;
-    background: #f4f4f4;
+    background: #1e90ff;
+    color: white;
     margin: 0;
     border: 1px solid #ddd;
 }
 
 .tabs .tab-link.current {
-    background: #0066cc;
-    color: white;
+    background: #333;
 }
 
 .tab-content {
     display: none;
 }
 
-.tab-content.current {
-    display: block;
-}
-
-main {
-    padding: 2em;
-    max-width: 800px;
-    margin: auto;
-}
-
-section {
-    margin-bottom: 2em;
-}
-
-section h2 {
-    border-bottom: 2px solid #0066cc;
-    padding-bottom: 0.5em;
-}
-
-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-section ul li {
-    margin: 0.5em 0;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p {
-    margin: 0;
-}
+.tab-content.current
