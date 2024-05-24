@@ -1,15 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const tabLinks = document.querySelectorAll('.tab-link');
-    const tabContents = document.querySelectorAll('.tab-content');
+    const tabs = document.querySelectorAll('.tab-link');
+    const contents = document.querySelectorAll('.tab-content');
 
-    tabLinks.forEach(link => {
-        link.addEventListener('click', function () {
-            tabLinks.forEach(link => link.classList.remove('current'));
-            tabContents.forEach(content => content.classList.remove('current'));
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = document.querySelector(tab.dataset.tab);
 
-            this.classList.add('current');
-            const tab = this.getAttribute('data-tab');
-            document.getElementById(tab).classList.add('current');
+            tabs.forEach(t => t.classList.remove('current'));
+            contents.forEach(c => c.classList.remove('current'));
+
+            tab.classList.add('current');
+            target.classList.add('current');
         });
     });
 });
