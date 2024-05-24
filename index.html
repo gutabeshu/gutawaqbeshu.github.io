@@ -4,22 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guta Wakbulcho Abeshu, PhD - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #77aaff;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #77aaff;
+            font-weight: bold;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('https://via.placeholder.com/1200x400') no-repeat 0 -400px;
+            text-align: center;
+            color: #fff;
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        nav ul {
+            background: #333;
+            color: #fff;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            padding: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background: #77aaff;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.current {
+            display: block;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Guta Wakbulcho Abeshu, PhD</h1>
-            <p>Postdoctoral Research Associate in Computational Climate Science</p>
-            <p>Pacific Northwest National Laboratory, Richland, WA, USA</p>
-            <div class="contact-info">
-                <p><i class="fas fa-phone"></i> +1 (509) 460-7517</p>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:gutewaqi@gmail.com">gutewaqi@gmail.com</a></p>
-                <p>
-                    <a href="https://github.com/gutabeshu"><i class="fab fa-github"></i> Github</a> | 
-                    <a href="https://scholar.google.com/citations?user=oJwf_RwAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-                </p>
+            <div id="branding">
+                <h1>Guta Wakbulcho Abeshu, PhD</h1>
+                <p>Postdoctoral Research Associate in Computational Climate Science</p>
+                <p>Pacific Northwest National Laboratory, Richland, WA, USA</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> +1 (509) 460-7517</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:gutewaqi@gmail.com">gutewaqi@gmail.com</a></p>
+                    <p>
+                        <a href="https://github.com/gutabeshu"><i class="fab fa-github"></i> Github</a> | 
+                        <a href="https://scholar.google.com/citations?user=oJwf_RwAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                    </p>
+                </div>
             </div>
         </div>
     </header>
@@ -39,8 +138,8 @@
     <main>
         <div class="container">
             <div id="tab-1" class="tab-content current">
-                <section>
-                    <h2>Welcome</h2>
+                <section id="showcase">
+                    <h1>Welcome</h1>
                     <p>Hello! I am Guta Wakbulcho Abeshu, a Postdoctoral Research Associate at the Pacific Northwest National Laboratory. My research focuses on computational climate science, hydrosystems, and ecohydrology. Explore my website to learn more about my work, research interests, and publications.</p>
                 </section>
             </div>
@@ -112,6 +211,4 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <script>
