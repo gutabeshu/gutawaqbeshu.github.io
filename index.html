@@ -121,13 +121,11 @@
         </div>
     </header>
 
-
     <nav>
         <div class="container">
             <ul class="tabs">
                 <li class="tab-link current" data-tab="tab-1">Home</li>
                 <li class="tab-link" data-tab="tab-2">About</li>
-                    <p>Hello! I am Guta Wakbulcho Abeshu, a Postdoctoral Research Associate at the Pacific Northwest National Laboratory. My research focuses on computational climate science, hydrosystems, and ecohydrology. Explore my website to learn more about my work, research interests, and publications.</p>
                 <li class="tab-link" data-tab="tab-3">Research</li>
                 <li class="tab-link" data-tab="tab-4">Publications</li>
                 <li class="tab-link" data-tab="tab-5">Contact</li>
@@ -135,19 +133,19 @@
         </div>
     </nav>
 
-
     <main>
         <div class="container">
             <div id="tab-1" class="tab-content current">
                 <section id="showcase">
+                    <h1>Welcome to My Website</h1>
+                    <p>This is the Home tab content.</p>
                 </section>
             </div>
 
             <div id="tab-2" class="tab-content">
                 <section>
                     <h2>About Me</h2>
-                    <p>I hold a Ph.D. in Civil Engineering (Hydrosystems) from the University of Houston. My dissertation focused on understanding catchment ecohydrological processes and their interactions across multiple spatiotemporal scales. I also have a Master of Advanced Studies in Sustainable Water Resources from ETH Zurich and an M.Sc. in Water Resources Engineering and Management from Addis Ababa University.</p>
-                    <p>My research interests include catchment ecohydrology, urban ecohydrology, medium to large scale hydrological/water resources modeling, water resource systems, hydrological extremes, dynamic risk management, and the resilience of water infrastructures.</p>
+                    <p>Hello! I am Guta Wakbulcho Abeshu, a Postdoctoral Research Associate at the Pacific Northwest National Laboratory. My research focuses on computational climate science, hydrosystems, and ecohydrology. Explore my website to learn more about my work, research interests, and publications.</p>
                 </section>
             </div>
 
@@ -210,3 +208,22 @@
     </footer>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab-link');
+            const contents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+
+                    tabs.forEach(item => item.classList.remove('current'));
+                    contents.forEach(content => content.classList.remove('current'));
+
+                    this.classList.add('current');
+                    document.getElementById(tabId).classList.add('current');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
