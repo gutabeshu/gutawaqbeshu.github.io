@@ -4,110 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guta Wakbulcho Abeshu, PhD - Personal Website</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #add8e6; /* Water blue background color */
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #77aaff;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #77aaff;
-            font-weight: bold;
-        }
-        #showcase {
-            min-height: 400px;
-            background: url('https://via.placeholder.com/1200x400') no-repeat 0 -400px;
-            text-align: center;
-            color: #fff;
-        }
-        #showcase h1 {
-            margin-top: 100px;
-            font-size: 55px;
-            margin-bottom: 10px;
-        }
-        #showcase p {
-            font-size: 20px;
-        }
-        nav ul {
-            background: #333;
-            color: #fff;
-            padding: 0;
-            list-style: none;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            padding: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            background: #77aaff;
-        }
-        .tab-content {
-            display: none;
-            background-color: #ffffff; /* White background for tab content */
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .tab-content.current {
-            display: block;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -201,6 +99,7 @@
                             <p>Welcome to my blog! This is where I will document my projects and thoughts on hydrology and water resources engineering.</p>
                         </article>
                     </div>
+                    <a href="blog/blog.html">View All Blog Posts</a>
                 </section>
             </div>
 
@@ -226,23 +125,6 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const tabs = document.querySelectorAll('.tab-link');
-            const contents = document.querySelectorAll('.tab-content');
-
-            tabs.forEach(tab => {
-                tab.addEventListener('click', function() {
-                    const tabId = this.getAttribute('data-tab');
-
-                    tabs.forEach(item => item.classList.remove('current'));
-                    contents.forEach(content => content.classList.remove('current'));
-
-                    this.classList.add('current');
-                    document.getElementById(tabId).classList.add('current');
-                });
-            });
-        });
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
