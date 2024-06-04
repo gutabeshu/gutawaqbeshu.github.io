@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Components - Guta Wakbulcho Abeshu, PhD</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Guta Wakbulcho Abeshu, PhD</h1>
+                <p>Postdoctoral Research Associate in Computational Climate Science</p>
+                <p>Pacific Northwest National Laboratory, Richland, WA, USA</p>
+                <div class="contact-info">
+                    <p>
+                        <a href="https://github.com/gutabeshu"><i class="fab fa-github"></i> Github</a> | 
+                        <a href="https://scholar.google.com/citations?user=oJwf_RwAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <nav>
+        <div class="container">
+            <ul class="tabs">
+                <li class="tab-link"><a href="../index.html">Home</a></li>
+                <li class="tab-link"><a href="../index.html#tab-2">About</a></li>
+                <li class="tab-link"><a href="../index.html#tab-3">Research</a></li>
+                <li class="tab-link"><a href="../index.html#tab-4">Publications</a></li>
+                <li class="tab-link"><a href="../blog/blog.html">Blog</a></li>
+                <li class="tab-link"><a href="../index.html#tab-5">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Module Components</h2>
+                <h3>SurfaceRunoff</h3>
+                <ul>
+                    <li>Calculates surface runoff based on soil properties, moisture levels, and urban vs. rural settings.</li>
+                    <li>Takes into account frozen soil layers and the impact of snow and ice on runoff.</li>
+                </ul>
+                <h3>Infiltration</h3>
+                <ul>
+                    <li>Computes infiltration into the surface soil layer minus the evaporation.</li>
+                    <li>Handles partitioning of moisture fluxes between soil and surface water (h2osfc).</li>
+                    <li>Considers modified infiltration schemes and water inputs from various sources, including irrigation.</li>
+                </ul>
+                <h3>WaterTable</h3>
+                <ul>
+                    <li>Calculates the water table, accounting for aquifer recharge without drainage.</li>
+                    <li>Determines the layer containing the water table and computes the specific yield for the aquifer.</li>
+                    <li>Handles perched water tables and frost tables, updating soil moisture and ice content based on condensation and sublimation processes.</li>
+                </ul>
+                <h3>Drainage</h3>
+                <ul>
+                    <li>Calculates subsurface drainage, including both bottom and topographic control drainage.</li>
+                    <li>Considers factors like hydraulic conductivity, soil matric potential, and the effect of ice on soil permeability.</li>
+                    <li>Uses different approaches for vegetated vs. urban land units and adjusts water table depth accordingly.</li>
+                </ul>
+                <h3>DrainageVSFM</h3>
+                <ul>
+                    <li>Specific version of the drainage calculation that uses a different soil moisture movement model.</li>
+                    <li>Includes additional variables and parameters for more detailed simulation of soil hydrology processes.</li>
+                </ul>
+                <h2>Key Variables and Parameters</h2>
+                <ul>
+                    <li><b>Bounds:</b> Represents the spatial bounds of the calculation.</li>
+                    <li><b>SoilHydrologyType, SoilStateType, WaterfluxType:</b> Custom types that encapsulate various hydrological, state, and water flux parameters.</li>
+                    <li><b>dtime:</b> Time step for the calculations.</li>
+                    <li><b>num_hydrologyc, filter_hydrologyc, num_urbanc, filter_urbanc:</b> Arrays and counters for filtering and processing hydrological and urban column points.</li>
+                    <li><b>h2osoi_liq, h2osoi_ice, h2osfc:</b> Soil moisture variables representing liquid water, ice content, and surface water.</li>
+                    <li><b>zwt, zwt_perched:</b> Variables for the depth of the water table and perched water table.</li>
+                </ul>
+                <h2>Detailed Calculations</h2>
+                <ul>
+                    <li><b>Surface Runoff:</b> Considers soil moisture, urban impervious surfaces, and snow cover to compute runoff.</li>
+                    <li><b>Infiltration:</b> Uses soil properties, topographic features, and water inputs to calculate how much water infiltrates the soil.</li>
+                    <li><b>Water Table Calculation:</b> Determines the depth of the water table based on aquifer recharge, specific yield, and soil moisture conditions.</li>
+                    <li><b>Subsurface Drainage:</b> Accounts for various soil layers, ice content, and hydraulic conductivity to compute drainage.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Guta Wakbulcho Abeshu. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
