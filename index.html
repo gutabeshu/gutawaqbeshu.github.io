@@ -125,6 +125,27 @@
         </div>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('.tab-link');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    tabs.forEach(item => item.classList.remove('current'));
+                    tab.classList.add('current');
+
+                    const tabID = tab.getAttribute('data-tab');
+                    tabContents.forEach(content => {
+                        if (content.id === tabID) {
+                            content.classList.add('current');
+                        } else {
+                            content.classList.remove('current');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
